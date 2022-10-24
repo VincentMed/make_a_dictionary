@@ -28,7 +28,8 @@ print(my_dict)
 my_dict["Whoopsie"] = "Birthday: June 20, 1920" , "Favorite Color: Red"
 
 # 3 print values for member of the family
-print(my_dict)
+for key, value in my_dict.items():
+    print(key, ': ', value)
 
 # whose name string starts with whoever is first in the alphabet,
 # sort dictionary list by keys alphabetically
@@ -38,5 +39,7 @@ my_dict = OrderedDict(sorted(my_dict.items()))
 first_dict_item = list(my_dict.keys())[0]
 
 print("First name in alphabet order is: " + first_dict_item)
+
+
 
 
